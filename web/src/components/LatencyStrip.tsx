@@ -52,9 +52,23 @@ export function LatencyStrip({ loop, drill }: Props) {
           ))}
         </div>
       </div>
-      <figcaption className="muted small">
-        Block timestamps, 1 s resolution. Each chain keeps its own clock, so a Lasna mark can read up to about 1 s
-        early against Base.{measured ? " Brackets: wall-clock seen by this browser since your drill was mined." : ""}
+      <figcaption className="muted small strip-caption">
+        <span>
+          <i className="key key-origin" aria-hidden="true" />
+          Swap
+        </span>
+        <span>
+          <i className="key key-act" aria-hidden="true" />
+          Sentinel, keeper and payout
+        </span>
+        <span>
+          <i className="key key-positive" aria-hidden="true" />
+          Peg restored, vault reopened
+        </span>
+        <span className="strip-caption-note">
+          Block timestamps, 1 s resolution. Each chain keeps its own clock, so a Lasna mark can read up to about 1 s
+          early against Base.{measured ? " In brackets: wall-clock seen by this browser since your drill was mined." : ""}
+        </span>
       </figcaption>
     </figure>
   );

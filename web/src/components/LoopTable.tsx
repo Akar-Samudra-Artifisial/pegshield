@@ -10,7 +10,7 @@ interface Props {
 
 function cell(loop: Loop, kind: MarkKind) {
   const m = markOf(loop, kind);
-  return m ? <span className="num">{seconds(m.seconds)}</span> : <span className="muted">Pending</span>;
+  return m ? <span className="num">{seconds(m.seconds)}</span> : <span className="muted">Waiting</span>;
 }
 
 export function LoopTable({ loops, selected, onSelect }: Props) {
@@ -20,14 +20,22 @@ export function LoopTable({ loops, selected, onSelect }: Props) {
         <caption className="sr-only">Depeg loops in the last 24 hours, newest first</caption>
         <thead>
           <tr>
-            <th scope="col">Loop</th>
-            <th scope="col" className="r">Depeg price</th>
-            <th scope="col" className="r">Detected</th>
-            <th scope="col" className="r">Keeper</th>
-            <th scope="col" className="r">Payout</th>
-            <th scope="col" className="r">Peg restored</th>
-            <th scope="col" className="r">Policies paid</th>
-            <th scope="col">Origin swap</th>
+            <th scope="col">Depeg</th>
+            <th scope="col" className="r col-opt">Low price</th>
+            <th scope="col" className="r">
+              Confirmed <span className="th-chain">Lasna</span>
+            </th>
+            <th scope="col" className="r">
+              Keeper <span className="th-chain">Base</span>
+            </th>
+            <th scope="col" className="r">
+              Payout <span className="th-chain">Unichain</span>
+            </th>
+            <th scope="col" className="r">
+              Peg restored <span className="th-chain">Lasna</span>
+            </th>
+            <th scope="col" className="r col-opt">Policies paid</th>
+            <th scope="col" className="col-opt">Swap tx</th>
           </tr>
         </thead>
         <tbody>
@@ -45,13 +53,13 @@ export function LoopTable({ loops, selected, onSelect }: Props) {
                     Epoch {loop.epoch.toString()}
                   </button>
                 </th>
-                <td className="r num">{price(loop.depegPrice)}</td>
+                <td className="r num col-opt">{price(loop.depegPrice)}</td>
                 <td className="r">{cell(loop, "detect")}</td>
                 <td className="r">{cell(loop, "defend")}</td>
                 <td className="r">{cell(loop, "payout")}</td>
                 <td className="r">{cell(loop, "recover")}</td>
-                <td className="r num">{loop.paidCount === null ? "–" : loop.paidCount.toString()}</td>
-                <td>
+                <td className="r num col-opt">{loop.paidCount === null ? "–" : loop.paidCount.toString()}</td>
+                <td className="col-opt">
                   <a className="num" href={txUrl("base", loop.marks[0].tx)} target="_blank" rel="noreferrer">
                     {shortHash(loop.marks[0].tx)}
                   </a>
