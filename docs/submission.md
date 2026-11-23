@@ -1,6 +1,6 @@
 # PegShield: DoraHacks "Submit Build" text (paste-ready)
 
-Only `<VIDEO_URL>` still needs your input. Everything else is copied from `README.md`,
+Everything here is paste-ready. It is copied from `README.md`,
 `deployments/testnet.env`, `docs/depeg-bench-2026-11-23.txt` and `docs/depeg-loop-2026-11-23-run1.txt`.
 
 ## Project name
@@ -84,7 +84,7 @@ Next.js dashboard (`web/`, viem) on Vercel, Python scripts for deploy and latenc
 
 - Repository: https://github.com/Akar-Samudra-Artifisial/pegshield
 - Live demo: https://pegshield-one.vercel.app
-- Video (<3 min): <VIDEO_URL>
+- Video (<3 min): https://youtu.be/IXj_Qs9nCVo
 - Hackathon: https://dorahacks.io/hackathon/reactive-omni-buildathon/detail
 
 ## Contract addresses

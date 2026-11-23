@@ -11,6 +11,8 @@ Built for the [Reactive Omni Buildathon](https://dorahacks.io/hackathon/reactive
 
 **Live dashboard:** https://pegshield-one.vercel.app (testnet; read-only without a wallet; auto-deployed from `main`, app root `web/`)
 
+**Demo video (2:06):** https://youtu.be/IXj_Qs9nCVo
+
 ## Status
 
 | Milestone | State |
