@@ -1,0 +1,14 @@
+expecting epoch 1; pool price 1.0000
+dump 1: tx 0xa383f6f809dfc25505faf8b75ec2c75c602f61c6b9e5994942f37c237f0f4e98 block 62505871 price 0.9612
+dump 2: tx 0x69a7128fe3ac364216bb5bb0d0ca6b60043258459b16d6bb7df5d113ca2ded80 block 62505884 price 0.9247
+dump 3: tx 0x6f60ab74256f42a7a8e9012d07c769d86f88ddc542a0d805b3a5e6fe1085047f block 62505898 price 0.8902
+
+confirming origin tx 0x6f60ab74256f42a7a8e9012d07c769d86f88ddc542a0d805b3a5e6fe1085047f (Base block 62505898)
+  lasna_depegged  tx 0x162b43c36237a60db693f83ea05e34cd0142e6d82e435a6567b851dc03977356  block Δ= -1s  wall Δ=  1.69s
+  uni_payout      tx 0x2c6b89d48388ab7b936182e4b5cca5a2a6c29ceb541ca8c87f8a3755f0d5686c  block Δ=  2s  wall Δ=  4.85s
+  base_keeper     tx 0xd9a057b1973b5217f07045dacd05fcf0e3275da0a63e31f12aa630ee9bf05b50  block Δ=  1s  wall Δ=  2.94s
+  uni_recovered   tx 0x2ede435233840afcfad43e8ca9014a6ca42492c399bc56618db822dcd94dfc62  block Δ=  4s  wall Δ=  5.78s
+
+pool price now 1.0002
+sentinel status 0 (0 NORMAL, 1 WATCH, 2 DEPEGGED)
+# note: this run measured wall Δ from after the last price read (script fixed afterwards)

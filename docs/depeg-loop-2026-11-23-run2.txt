@@ -1,0 +1,13 @@
+expecting epoch 2; pool price 1.0002
+dump 1: tx 0x6ec471d2a34654e8c3bbd631d6a894e3ad639df83469244017d0077843e9c29a block 62506194 price 0.9614
+dump 2: tx 0xbf34cb516f1f14049f61a2c090217077558d7057b08b25a3dabac5a9d093e322 block 62506207 price 0.9248
+dump 3: tx 0x419a27054a5c517f1f3397cade7e56ee027dd0840a4ccc595df3046fdcf01f99 block 62506220 price 0.8903
+
+confirming origin tx 0x419a27054a5c517f1f3397cade7e56ee027dd0840a4ccc595df3046fdcf01f99 (Base block 62506220)
+  lasna_depegged  tx 0x854eb2d527bf0060ff5863c195a394109eef3d78aaf7c4b2d3b201ef743712d7  block Δ=  0s  wall Δ=  2.66s
+  uni_payout      tx 0xa8e6af7994b86a894dd8dda8a84790efd913994ca6d31724df43e654527e725b  block Δ=  3s  wall Δ=  5.81s
+  base_keeper     tx 0x7c9b757638b3820e2b0828e5775b8a935a0f83c1410f89a38a8d3afce09bf462  block Δ=  2s  wall Δ=  3.80s
+  uni_recovered   tx 0x4f40a40e5aca450b50828a741e633775a4f27f621c3c55b66bd95ea0a4929cff  block Δ=  4s  wall Δ=  6.62s
+
+pool price now 1.0002
+sentinel status 0 (0 NORMAL, 1 WATCH, 2 DEPEGGED)
