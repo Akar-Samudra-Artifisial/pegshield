@@ -1,6 +1,6 @@
 # PegShield: DoraHacks "Submit Build" text (paste-ready)
 
-Fields marked `<TODO: ...>` need your input. Everything else is copied from `README.md`,
+Only `<VIDEO_URL>` still needs your input. Everything else is copied from `README.md`,
 `deployments/testnet.env`, `docs/depeg-bench-2026-11-23.txt` and `docs/depeg-loop-2026-11-23-run1.txt`.
 
 ## Project name
@@ -76,7 +76,9 @@ Next.js dashboard (`web/`, viem) on Vercel, Python scripts for deploy and latenc
 
 ### What's next
 
-<TODO: confirm roadmap, e.g. real stablecoin pools beyond MockPair, multiple pools per sentinel, underwriter yield and pricing, mainnet audit.>
+- **Real Uniswap v4 pools**: watch live stablecoin pools on Base and Unichain instead of the MockPair.
+- **Pro-rata payouts**: when open cover exceeds vault capital, pay every policy its share in one callback instead of a full payout queue.
+- **Multi-stablecoin**: one sentinel tracking several stablecoins, each with its own thresholds, keeper and policy book.
 
 ## Links
 
@@ -132,10 +134,27 @@ Unichain Sepolia (1301), explorer https://sepolia.uniscan.xyz
 | Vault payout handled | Unichain Sepolia | [0x60ab31a05399e38e20754f5db8b8669522b4e616047a4bd46ade1e071a66a51e](https://sepolia.uniscan.xyz/tx/0x60ab31a05399e38e20754f5db8b8669522b4e616047a4bd46ade1e071a66a51e) |
 | Recovered | Unichain Sepolia | [0xe4f9765f94a2f513fc5a37550fa1ba17a313e6a8bd657a3fe3adb11291a24256](https://sepolia.uniscan.xyz/tx/0xe4f9765f94a2f513fc5a37550fa1ba17a313e6a8bd657a3fe3adb11291a24256) |
 
-Note: no "epoch 14" loop exists in the repo files; the bench covers epochs 4 to 13. All bench tx hashes: `docs/depeg-bench-2026-11-23.txt`.
+All bench tx hashes (epochs 4 to 13): `docs/depeg-bench-2026-11-23.txt`.
+
+### Browser-wallet loop, epoch 14 (dashboard "Buy cover" + "Trigger a test depeg", 1,000 mUSD policy paid)
+
+| Step | Chain | Tx hash |
+|---|---|---|
+| Buy policy #2 (1,000 mUSD cover) | Unichain Sepolia | [0xd401c1bd7ae82fd6cfc1fe03cbacc9012e5c7e19121e79230045364d8a765ded](https://sepolia.uniscan.xyz/tx/0xd401c1bd7ae82fd6cfc1fe03cbacc9012e5c7e19121e79230045364d8a765ded) |
+| Origin drill | Base Sepolia | [0x8d6105090331dcef785676511e1d4bdd515a3c05090688c30d3a655411a247f9](https://sepolia.basescan.org/tx/0x8d6105090331dcef785676511e1d4bdd515a3c05090688c30d3a655411a247f9) |
+| Lasna react (sentinel DEPEGGED) | Lasna | [0xe04cd96751b94b29699a3fea56468357252d73677ade73438cf69bc86172a55c](https://lasna.reactscan.net/tx/0xe04cd96751b94b29699a3fea56468357252d73677ade73438cf69bc86172a55c) |
+| Keeper callback (buy-back) | Base Sepolia | [0x75d7c5acbd31edc1a84c694691c5f322f7231f58585e30706049c5d0a773f200](https://sepolia.basescan.org/tx/0x75d7c5acbd31edc1a84c694691c5f322f7231f58585e30706049c5d0a773f200) |
+| Vault payout | Unichain Sepolia | [0x491aefb24130bae0b1c95b9c742a99e4b7f6b6c06163cff9e152f2fad92bdb2b](https://sepolia.uniscan.xyz/tx/0x491aefb24130bae0b1c95b9c742a99e4b7f6b6c06163cff9e152f2fad92bdb2b) |
+| Lasna react (sentinel back to NORMAL) | Lasna | [0x7877b46634da12f853285efea5b7c9d012380af3aade48ea55cf7a0dc915d291](https://lasna.reactscan.net/tx/0x7877b46634da12f853285efea5b7c9d012380af3aade48ea55cf7a0dc915d291) |
+| Recovered (vault reopens) | Unichain Sepolia | [0x5604def2907cb3d7e5abc41526e4a73977e4998e0e9b248e8bb95db5b56cea5b](https://sepolia.uniscan.xyz/tx/0x5604def2907cb3d7e5abc41526e4a73977e4998e0e9b248e8bb95db5b56cea5b) |
 
 ## Honest notes
 
 Block timestamps have 1 s resolution and the chains' clocks differ, so Lasna can read about 1 s early (block delta -1).
 Wall times include polling and public-RPC round trips. Run 1's wall clock started about 0.3 s late; its block deltas are unaffected.
-Contracts are testnet mocks and are not audited. `<TODO: add any submission-form fields not covered here (team members, contact)>`
+Contracts are testnet mocks and are not audited.
+
+## Team
+
+Solo build by Bayu Trisnapati (Akar Samudra Artifisial). Contact via DoraHacks or the GitHub organization
+https://github.com/Akar-Samudra-Artifisial.
