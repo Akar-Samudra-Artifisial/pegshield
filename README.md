@@ -9,7 +9,7 @@ Base Sepolia and, within seconds of a depeg, fires two callbacks:
 Built for the [Reactive Omni Buildathon](https://dorahacks.io/hackathon/reactive-omni-buildathon/detail)
 (track: Every Second Counts). Work in progress.
 
-**Live dashboard:** https://pegshield-one.vercel.app (testnet; read-only without a wallet)
+**Live dashboard:** https://pegshield-one.vercel.app (testnet; read-only without a wallet; auto-deployed from `main`, app root `web/`)
 
 ## Status
 
