@@ -1,0 +1,49 @@
+run id=2 origin tx 0x9b80b6c2b300c40929a33847421761ff384b8862decbb29ecba1275cff144b8e
+  lasna: tx 0x7734ef3843ece284782559f894a57771ace9c72ee11e4d4b3c501a733602aa31  block Δ=0s  wall Δ(from origin mined)=1.49s
+  base_cb: tx 0x3313ac5cd5dbf49ccc3e0590a7840160cc8f3829a11aac2896aafa0fd296b60a  block Δ=2s  wall Δ(from origin mined)=1.84s
+  uni_cb: tx 0x508f4ed78ebb654cc6c596198c1e61ab35a187e5a578a146e10dfa557914b8c9  block Δ=3s  wall Δ(from origin mined)=4.82s
+run id=3 origin tx 0x17a9b4bf5faa698455668977c210b3a06944998d4c7965062138d66c6f817c94
+  lasna: tx 0xf1018c390cd3c664f18bde87f600549602f0e3c5f1d973c809c04aa258a25186  block Δ=-1s  wall Δ(from origin mined)=1.50s
+  base_cb: tx 0xbdc12e2628c932eefbe186d04bfa28e04b24f2b8aab64b76142cf86ecd0838dc  block Δ=1s  wall Δ(from origin mined)=1.84s
+  uni_cb: tx 0x1043568474caf8b1a7962825da5ca409ffbcec1905c67dba9bdd825685ff7d71  block Δ=2s  wall Δ(from origin mined)=3.84s
+run id=4 origin tx 0xcf1bd92d4a1c37d8ec6b163b1e54a4cd65b2a599bef6cf7997be328767a46b49
+  lasna: tx 0x6d3c3a217487132e7412f1f98b05e7f5c52d82e1420fe7d8448e6e26a1448fe7  block Δ=0s  wall Δ(from origin mined)=1.56s
+  base_cb: tx 0x79d2eef0ba8961b80f2c13696ae538a1e7a5e5424cf0500c2247aeca1d9aa805  block Δ=2s  wall Δ(from origin mined)=1.89s
+  uni_cb: tx 0x24b14bff6f9c96a6154374b5311f85e125932917a337f268d48f2835f9b13d72  block Δ=3s  wall Δ(from origin mined)=3.84s
+run id=5 origin tx 0x042fe3731a4bed4429575cdd272bf03bd3cc7d1bfad5c9f082b790645c7c7c74
+  lasna: tx 0x207fd0726a45be9e1d8b51dec04e64acf348257aa494da1a16b8812ab2cd68a0  block Δ=-1s  wall Δ(from origin mined)=1.54s
+  base_cb: tx 0x7d8413a140385f7e6123696f499a508b886c73024012cff26008981f90c8ceda  block Δ=1s  wall Δ(from origin mined)=1.88s
+  uni_cb: tx 0x32679ee6180d15171f2f7161ed6e5e6326655229327d99b0dca6e2749b102b5b  block Δ=2s  wall Δ(from origin mined)=3.77s
+run id=6 origin tx 0xe462679d4a6f509d9cff604f2bcf988d43a1b8a7a154f00aecfd33dc9369e1e0
+  lasna: tx 0x0b8f47ab612a5b8e9a566db8bdf132729cfca13ed11053d692b765b7519d5d17  block Δ=0s  wall Δ(from origin mined)=1.56s
+  base_cb: tx 0xb7b78f86b4a61a8eac52a8605d192cb66c0dbd426479bc16dd9f2df8054546c5  block Δ=2s  wall Δ(from origin mined)=1.90s
+  uni_cb: tx 0xadf2a4bce3eecf722afe33aae46d93630e04f0f4d8be246c8a8f29ed73fbeca1  block Δ=3s  wall Δ(from origin mined)=4.90s
+run id=7 origin tx 0xe7b549b1a1e72787072e76a77e789f73f179f547af129095aab40a801f634210
+  lasna: tx 0x094282b281f8f8b296e6b7fe3f4f82d9821854449025ac47d9470dc064c52ac7  block Δ=0s  wall Δ(from origin mined)=1.62s
+  base_cb: tx 0xcb4a553de4c8f17756c731ed28faebab0cd2800927df5bba026a480d78f2f1f8  block Δ=2s  wall Δ(from origin mined)=1.96s
+  uni_cb: tx 0xdbf1a1e224d9fac79a26711f315f29693cd2cb4d938723909bc108682462a8ae  block Δ=2s  wall Δ(from origin mined)=3.83s
+run id=8 origin tx 0x67170856867fb60fa1582f87b332ef1d3b72cc9288dfabd26c2121955a2fed43
+  lasna: tx 0x668b89c888afe89133638b9a2d855c3ba005aee7c16289ad72e5b3960e5bfc4d  block Δ=-1s  wall Δ(from origin mined)=1.50s
+  base_cb: tx 0x7c838b060522a6548d27b5aab865d490982e083bc653b32521296486f3ef90b3  block Δ=1s  wall Δ(from origin mined)=1.84s
+  uni_cb: tx 0xb901b950983b5e7f944dba2f4f1341c35f8174fc8573f583d31812afc4c8c4c7  block Δ=2s  wall Δ(from origin mined)=3.77s
+run id=9 origin tx 0xc827d014f344aae57a21429e3f739c2fd771c1abd63b433067bc80ab6414be82
+  lasna: tx 0x51d6783ef38ba3fc533c521e454f97cf9806c73c40c9b69dacf00e644e3a155a  block Δ=0s  wall Δ(from origin mined)=1.52s
+  base_cb: tx 0xeb951a4604833be6afcc38f8e50f9bdc76163fc9d97aca1bcf05d4c7e3db5262  block Δ=2s  wall Δ(from origin mined)=1.84s
+  uni_cb: tx 0x7f492ae5da19e4e32624b0c41984623dd57a8ba5654155ca5890e63b25c6f7ac  block Δ=3s  wall Δ(from origin mined)=4.81s
+run id=10 origin tx 0x9f84d9dfc55f89268ba198b27f5e6a24366a74803ae7d2da6ad3012b83b59217
+  lasna: tx 0xa1c223a0ec8481f69679ba25977f9d81c303583ce243d0f32dd1db28b4697772  block Δ=0s  wall Δ(from origin mined)=1.66s
+  base_cb: tx 0xd16d8b64073b2ce7a9eb0b5dd2dc349b5067c8cffd3979e3f57e2e4613bf30a2  block Δ=2s  wall Δ(from origin mined)=2.00s
+  uni_cb: tx 0x6dc982433cec98b08486cec1eb845b5905cd782beebf7aa2078dc1d22fedc4e8  block Δ=2s  wall Δ(from origin mined)=3.90s
+run id=11 origin tx 0x7f4eb3becb2c4cb1fda81d55cbff9bf91c8b75dbddc98a0fa3bd055fcaf49776
+  lasna: tx 0x7d715067211fe098cd9b12d77a52d9aa571bb6508095758bcde1506dab649495  block Δ=-1s  wall Δ(from origin mined)=1.57s
+  base_cb: tx 0x3e8555f7db12ead291a037cc283e36b2b80e22b36074aeb32bc9bb4a2543257a  block Δ=1s  wall Δ(from origin mined)=1.90s
+  uni_cb: tx 0x9ba8c2e4836b4c4eb92af78543fac57be48ebd4272f01838b09849f108738ed9  block Δ=2s  wall Δ(from origin mined)=3.79s
+
+summary (seconds)
+  base_cb_block_delta              n=10 p50=  2.00 p95=  2.00
+  base_cb_wall_from_mined          n=10 p50=  1.88 p95=  2.00
+  lasna_block_delta                n=10 p50=  0.00 p95=  0.00
+  lasna_wall_from_mined            n=10 p50=  1.55 p95=  1.66
+  uni_cb_block_delta               n=10 p50=  2.00 p95=  3.00
+  uni_cb_wall_from_mined           n=10 p50=  3.84 p95=  4.90
+  wall_send_to_mined               n=10 p50=  1.75 p95=  2.09
