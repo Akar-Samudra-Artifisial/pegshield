@@ -66,6 +66,10 @@ KEEPER=$(create "$BASE_SEPOLIA_RPC" src/PegKeeper.sol:PegKeeper "$CALLBACK_FUNDS
   "constructor(address,address,address,bool,uint256)" \
   "$BASE_SEPOLIA_CALLBACK_PROXY" "$SENTINEL" "$PAIR" true 50000ether)
 echo "PegKeeper (Base):    $KEEPER"
+# One-click depeg drill for the dashboard (testnet only)
+DRILL=$(create "$BASE_SEPOLIA_RPC" src/mocks/DepegDrill.sol:DepegDrill 0 \
+  "constructor(address,address)" "$PAIR" "$STABLE")
+echo "DepegDrill (Base):   $DRILL"
 
 # --- Unichain Sepolia: vault ----------------------------------------------------------
 USD_UNI=$(create "$UNICHAIN_SEPOLIA_RPC" src/mocks/MockToken.sol:MockToken 0 "constructor(string,string)" "Mock USD" "mUSD")
@@ -106,5 +110,6 @@ PEG_KEEPER_BASE=$KEEPER
 DEPEG_SENTINEL_LASNA=$SENTINEL
 MOCK_USD_UNICHAIN=$USD_UNI
 POLICY_VAULT_UNICHAIN=$VAULT
+DEPEG_DRILL_BASE=$DRILL
 EOF
 echo "Saved deployments/testnet.env"
