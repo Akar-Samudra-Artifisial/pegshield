@@ -1,0 +1,102 @@
+trigger=drill amount=2000 dumps=3 loops=10
+keeper treasury 83,006 mUSD
+
+epoch 4: pool price 1.0002
+  drill tx 0xbdd5a76932f8871581fef999be251aca5eba6a9f6176dab160c1674fe9c9f827 block 62519827 price 0.8903
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.67s  tx 0x94d0b0013395971a162585a9bd5bdf98b912470ee34d8291d4f5a85a59280617
+  Base: keeper defended      block Δ=  1s  wall Δ=  2.01s  tx 0x83f1540f56be6af82494a099d5ec65170fe7b1b49bc07e44e53fb33aead3ff0e
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.81s  tx 0x7cda4f280f89a4cdd2dfa73395f80ccfd34944d2397a2a6e980b370044739609
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  4.71s  tx 0xc2255d2d156899f54cd39f9fc9b2afbc40dae6af376ce112c4447e090a4d3d32
+  pool price now 1.0002
+keeper treasury 77,344 mUSD
+
+epoch 5: pool price 1.0002
+  drill tx 0x495b7e8cc144ddfc67735fd31b3bb31d941aa1cec18c9064ac1e156dcabd7790 block 62519959 price 0.8904
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.60s  tx 0x1ca9bc31105443f936323bf975a65d25c1263fe0123001249dbb991be9658cce
+  Base: keeper defended      block Δ=  1s  wall Δ=  1.91s  tx 0x7f1b269fc5a2b5f628b935b7f6b1fb3f0ec8381dc333f52fb17061443a687d49
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.70s  tx 0xabfbbd30888f6acef165cf753f54e56622fde8a5f5f30447247a819dbd8c1191
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  4.57s  tx 0xa308391ae5854d45d1d586002868b4a26b8f42e7fd3d7d4c83630bfba3350786
+  pool price now 1.0002
+keeper treasury 71,681 mUSD
+
+epoch 6: pool price 1.0002
+  drill tx 0x2b4d973ddc6550591b578fd7357f7f4b9c4aa8a14c58a4b48e91f4a4c8fcb783 block 62520090 price 0.8904
+  Lasna: depeg confirmed     block Δ=  0s  wall Δ=  1.66s  tx 0x5494ceb98c361c9caf9a0c6a530d9461963dfe79813bbd228f80ce45a65dd44a
+  Base: keeper defended      block Δ=  2s  wall Δ=  1.99s  tx 0x629d2589b44486122fc6bfc680f24b1dba3eb29130e71fc396db4b27feae46e3
+  Unichain: payout handled   block Δ=  3s  wall Δ=  4.73s  tx 0xa512db3fc0f6b181800882caf00f4686698445f29ea70b30a30870bf709c4e7a
+  Unichain: vault reopened   block Δ=  4s  wall Δ=  5.55s  tx 0x26fa4fb51f2ef904a0c9c95ae375de585dd2411666075bd531b6897e8a53165d
+  pool price now 1.0002
+keeper treasury 66,019 mUSD
+
+epoch 7: pool price 1.0002
+  drill tx 0xdd94294f194170b2ab26a87ffd6ee2e2a1d425c74bd0c41d02e0b5e3d804fd4f block 62520227 price 0.8904
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.65s  tx 0x876ef57f3c2808cd1480f751a84cc1cab05ecf7c905419227be15b178ca66b09
+  Base: keeper defended      block Δ=  1s  wall Δ=  2.04s  tx 0x2268c6fde51e6e763dc4f4ae57e730f9b567a8da97bd6db9e5810e5474143209
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.91s  tx 0x10bc2cd1766dfbfd2d2a7a232d9b94f9fcbf4c13574073001d82c99d7d5ca72f
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  4.80s  tx 0x59d9e9e56e73cfdf01364d1fa3b1c6dcc35b482d0fd1fae1d5e9eb0a21e91d33
+  pool price now 1.0002
+keeper treasury 60,356 mUSD
+
+epoch 8: pool price 1.0002
+  drill tx 0x411c0033094bd4c1f4976288b5edbd6e741b32aee154ebdefc94222cfbb1d7c1 block 62520361 price 0.8904
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.78s  tx 0xb5692b4c471362f355a0fdda766e4fbade0e96e705586392676690c389c53fa9
+  Base: keeper defended      block Δ=  1s  wall Δ=  2.10s  tx 0x14f4306abb44399b1ea95a941b8fcb6c0e335a78762b67f447cd3fa93b52edda
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.95s  tx 0x22530ad8ad1645765875691ca6c0d18b741d3f196d011ec8c71156a487dea9fc
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  3.76s  tx 0xc90437635f69aceb1462e4b70d3d5f1d0d44f80bba3b2c7de673b7b8b09fcfd0
+  pool price now 1.0002
+keeper treasury 54,694 mUSD
+
+epoch 9: pool price 1.0002
+  drill tx 0x3769f4974d291c64c803623db76bd00005a563c2d7b0eadd72511203e936911e block 62520490 price 0.8904
+  Lasna: depeg confirmed     block Δ=  0s  wall Δ=  1.67s  tx 0x51ac4ccaaf781e2ca8e285e13bcf46d97cd4ac657ebed30243ce873b02f3b2c9
+  Base: keeper defended      block Δ=  2s  wall Δ=  1.99s  tx 0x68cd7e00bc7f5f755100d87d01107d4a128fe36545a57d7b6b54889d1125b0ba
+  Unichain: payout handled   block Δ=  3s  wall Δ=  4.74s  tx 0x410c38e860f194cd07e86c2c69fd2a0b8d69f960a6501c7aac8407fae76619dc
+  Unichain: vault reopened   block Δ=  4s  wall Δ=  3.63s  tx 0x724f213bc6ff30e06d9ddb568a10d2875f1cb8cef3d7d9ac056071a5c80472bd
+  pool price now 1.0002
+keeper treasury 49,031 mUSD
+
+epoch 10: pool price 1.0002
+  drill tx 0xa3e9d05ae4c80bccdf72df115b1b306b997207c6dc8fa1c554857dbadf9fe357 block 62520622 price 0.8904
+  Lasna: depeg confirmed     block Δ=  0s  wall Δ=  1.71s  tx 0x2d19d7004b8e998854b1be793a2e883e80b8b3d80b90a238fdf2f4d9d4e96118
+  Base: keeper defended      block Δ=  1s  wall Δ=  2.03s  tx 0xf3b373a8cee428e8b928e34d6e88722ddda76d5041512ff21226bb2aa7f45c50
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.85s  tx 0x8f4bd22e73a2f629e114b2c8ea66aeb2e294a6b2b4b98585e24ef4a315608b4c
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  3.72s  tx 0x98abd66d4cb5d8836a9b4675f4314dd219e39627dbcc317d907faba1ad631381
+  pool price now 1.0002
+keeper treasury 43,369 mUSD
+
+epoch 11: pool price 1.0002
+  drill tx 0x318a5289939adfca7d5c02cfe201f551282e6d495a92eefd103787d7110b969c block 62520751 price 0.8905
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.64s  tx 0xa3f4dcf745b34428ae27d21f8b6e4bf180be29e20d85f4bb07d262fac65f7c89
+  Base: keeper defended      block Δ=  1s  wall Δ=  1.97s  tx 0x94f418448939b94625d531fa9c1e75711c46ebb562bf52cbe39e52ed3f9cf796
+  Unichain: payout handled   block Δ=  1s  wall Δ=  2.78s  tx 0x14cfa279fc2f69c85a4f7443cb1c878c8b8e274bd859b429a78acfa807459e9e
+  Unichain: vault reopened   block Δ=  2s  wall Δ=  3.60s  tx 0xdfff1a8f1ed4b016ce29360f0cbf55a11bd0e6b39a552fe0d36b9db4b275a68e
+  pool price now 1.0002
+keeper treasury 37,706 mUSD
+
+epoch 12: pool price 1.0002
+  drill tx 0x38938cfcb217e83b42c8f5e6a0524c704a58f0bd5df695585d0732a86e697067 block 62520879 price 0.8905
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.59s  tx 0x6d82dc774ef0a64fc467d28d903ae92d838cd9863a3bd4d1e6f37c289dc55eb3
+  Base: keeper defended      block Δ=  1s  wall Δ=  1.93s  tx 0xe86ef5bccbec3aeca5d8fd7353b057a09d0f772d6b4d989aca987fe214c44b0a
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.75s  tx 0x228f37c48aa847ec0f0f2b32e12db92265b7eefbb18ac35df99b1793bc0daa7e
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  3.56s  tx 0x6b5dd1b24d0c4689c06c144fede33aec7430cd099351b2652286c88a147e384c
+  pool price now 1.0002
+keeper treasury 32,043 mUSD
+
+epoch 13: pool price 1.0002
+  drill tx 0x725fcc0a8c4b35c09af5bc6705f47b4559722029b27ee03f81f63e0d9d3c4f9e block 62521007 price 0.8905
+  Lasna: depeg confirmed     block Δ= -1s  wall Δ=  1.61s  tx 0xf41b11755a9d5fc36e3c64c7fe3b3e76aa41496df098287f819b08393435c7a7
+  Base: keeper defended      block Δ=  1s  wall Δ=  1.94s  tx 0x9219aac2f2d81d197b2e3dd86d7a69a9a315d705164aa846d5106de8ee6856da
+  Unichain: payout handled   block Δ=  2s  wall Δ=  2.79s  tx 0x60ab31a05399e38e20754f5db8b8669522b4e616047a4bd46ade1e071a66a51e
+  Unichain: vault reopened   block Δ=  3s  wall Δ=  3.62s  tx 0xe4f9765f94a2f513fc5a37550fa1ba17a313e6a8bd657a3fe3adb11291a24256
+  pool price now 1.0002
+
+summary over 10 loops (seconds after the origin swap)
+  stage                        n  block p50   p95  wall p50    p95    max
+  Lasna: depeg confirmed      10       -1.0     0      1.65   1.78   1.78
+  Base: keeper defended       10        1.0     2      1.99   2.10   2.10
+  Unichain: payout handled    10        2.0     3      2.83   4.74   4.74
+  Unichain: vault reopened    10        3.0     4      3.74   5.55   5.55
+  incomplete loops: 0/10
+
+sentinel status 0 (0 NORMAL, 1 WATCH, 2 DEPEGGED)
+wrote docs/depeg-bench-2026-11-23.json

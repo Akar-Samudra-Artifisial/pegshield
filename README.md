@@ -16,7 +16,26 @@ Built for the [Reactive Omni Buildathon](https://dorahacks.io/hackathon/reactive
 | Latency spike: Base → Lasna → Base + Unichain | Done (2026-11-23) |
 | DepegSentinel state machine, PolicyVault, PegKeeper (41 tests) | Done (2026-11-23) |
 | Testnet deploy + depeg full loop | Done (2026-11-23) |
-| Dashboard (policies, trigger depeg, latency timeline) | Next |
+| Dashboard (policies, trigger depeg, latency timeline) | Done (2026-11-23) |
+| Latency bench, 10 full loops | Done (2026-11-23) |
+
+## Latency bench: 10 depeg full loops (2026-11-23)
+
+`python3 -I scripts/depeg_demo.py --bench 10`: each loop is one `DepegDrill.drill(2000e18, 3)` tx on
+Base Sepolia (three dumps → three `Sync` logs, pool 1.00 → 0.89). 10/10 loops completed; log in
+[`docs/depeg-bench-2026-11-23.txt`](docs/depeg-bench-2026-11-23.txt), raw tx hashes per stage in
+[`docs/depeg-bench-2026-11-23.json`](docs/depeg-bench-2026-11-23.json).
+
+| Stage (seconds after the origin drill tx) | block Δ p50 | block Δ p95 | wall p50 | wall p95 |
+|---|---|---|---|---|
+| Lasna: sentinel confirms DEPEGGED | −1 | 0 | 1.65 | 1.78 |
+| Base: PegKeeper `Defended` (buy-back) | 1 | 2 | 1.99 | 2.10 |
+| Unichain: PolicyVault `DepegHandled` (payout) | 2 | 3 | 2.83 | 4.74 |
+| Unichain: PolicyVault `Recovered` (peg restored, vault reopens) | 3 | 4 | 3.74 | 5.55 |
+
+block Δ = destination block timestamp − origin block timestamp (1 s resolution; Lasna's clock reads
+~1 s behind Base, hence −1). wall = local clock from the origin receipt to the 0.25 s poll that saw
+the log, so it includes polling and public-RPC round trips. p95 is nearest-rank (n=10 → slowest run).
 
 ## Depeg full loop on testnet (2026-11-23)
 
@@ -50,6 +69,7 @@ Run 1 transactions:
 | MockUSD (mUSD) | Base Sepolia (84532) | `0x49746328fdc3787f17e9374b00ef315fb11c33f0` |
 | MockPair | Base Sepolia (84532) | `0xbbe79dc4775a7ed7031a9d47528cd1c43c35f1bd` |
 | PegKeeper | Base Sepolia (84532) | `0xf7c42496d513ab05650029fa2e5da0d2a2542c2e` |
+| DepegDrill (testnet trigger) | Base Sepolia (84532) | `0x6d2a1f649634598044db76a4f9e1cc182ca2991e` |
 | DepegSentinel | Lasna (5318007) | `0x729215e645fe4b9eec8a2e9d7eb40482cd276894` |
 | MockUSD (mUSD) | Unichain Sepolia (1301) | `0xef28b0405637d399087aca3bd0dc716374fd8edb` |
 | PolicyVault | Unichain Sepolia (1301) | `0x729215e645fe4b9eec8a2e9d7eb40482cd276894` |
@@ -93,6 +113,9 @@ bash scripts/spike-deploy.sh      # writes deployments/spike.env
 python3 -I scripts/spike_latency.py 10
 bash scripts/deploy.sh            # PegShield, writes deployments/testnet.env
 python3 -I scripts/depeg_demo.py  # one depeg full loop + latency
+python3 -I scripts/depeg_demo.py --bench 10 --json docs/bench.json  # p50/p95
+cd web && pnpm install && pnpm build && pnpm start -p 3311  # dashboard
+PRIVATE_KEY=... node web/scripts/dev-wallet.mjs  # optional test wallet, see file header
 ```
 
 Stack: Foundry, Solidity 0.8.29 (`evm_version = paris` for Lasna), `reactive-lib-omni`.

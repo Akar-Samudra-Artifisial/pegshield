@@ -17,3 +17,4 @@ node_modules/
 
 # Design tooling
 .taste-skill/
+__pycache__/
