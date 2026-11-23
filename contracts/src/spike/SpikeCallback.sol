@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.29;
 
-import { IPayable } from "@reactive/src/interfaces/IPayable.sol";
-import { AbstractCallback } from "@reactive/src/base/AbstractCallback.sol";
+import {IPayable} from "@reactive/src/interfaces/IPayable.sol";
+import {AbstractCallback} from "@reactive/src/base/AbstractCallback.sol";
 
 /// @title SpikeCallback
 /// @notice Destination-side contract for the latency spike. Emits the origin metadata
@@ -17,7 +17,7 @@ contract SpikeCallback is AbstractCallback {
     constructor(IPayable callbackProxy_, address callbackSender_)
         payable
         AbstractCallback(callbackProxy_, callbackSender_)
-    { }
+    {}
 
     function onPing(address reactive_, uint256 id_, uint256 originChainId_, uint256 originBlock_, uint256 originTxHash_)
         external

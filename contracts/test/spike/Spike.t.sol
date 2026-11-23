@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.29;
 
-import { Test, Vm } from "forge-std/Test.sol";
-import { IReactive } from "@reactive/src/interfaces/IReactive.sol";
-import { IPayable } from "@reactive/src/interfaces/IPayable.sol";
-import { ISystemContract } from "@reactive/src/interfaces/ISystemContract.sol";
-import { AbstractCallback } from "@reactive/src/base/AbstractCallback.sol";
-import { AbstractPayer } from "@reactive/src/base/AbstractPayer.sol";
-import { SpikeReactive } from "../../src/spike/SpikeReactive.sol";
-import { SpikeCallback } from "../../src/spike/SpikeCallback.sol";
+import {Test, Vm} from "forge-std/Test.sol";
+import {IReactive} from "@reactive/src/interfaces/IReactive.sol";
+import {IPayable} from "@reactive/src/interfaces/IPayable.sol";
+import {ISystemContract} from "@reactive/src/interfaces/ISystemContract.sol";
+import {AbstractCallback} from "@reactive/src/base/AbstractCallback.sol";
+import {AbstractPayer} from "@reactive/src/base/AbstractPayer.sol";
+import {SpikeReactive} from "../../src/spike/SpikeReactive.sol";
+import {SpikeCallback} from "../../src/spike/SpikeCallback.sol";
 
 /// @dev Minimal stand-in for the system contract: records subscriptions and callback requests.
 contract MockSystem {
@@ -27,7 +27,7 @@ contract MockSystem {
         return 0;
     }
 
-    receive() external payable { }
+    receive() external payable {}
 }
 
 contract SpikeTest is Test {

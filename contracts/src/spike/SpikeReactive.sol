@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.29;
 
-import { ISystemContract } from "@reactive/src/interfaces/ISystemContract.sol";
-import { IReactive } from "@reactive/src/interfaces/IReactive.sol";
-import { AbstractReactive } from "@reactive/src/base/AbstractReactive.sol";
+import {ISystemContract} from "@reactive/src/interfaces/ISystemContract.sol";
+import {IReactive} from "@reactive/src/interfaces/IReactive.sol";
+import {AbstractReactive} from "@reactive/src/base/AbstractReactive.sol";
 
 /// @title SpikeReactive
 /// @notice Lasna-side contract for the latency spike. One origin event fans out into
